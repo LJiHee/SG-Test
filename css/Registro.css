@@ -1,0 +1,143 @@
+ /* geral */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+     color: #323232;
+     border: none;
+      
+}
+
+input, label {
+    display: block;
+    width: 100%;
+}
+
+input:focus, label:focus {
+    outline: none;
+}
+
+a{
+    color: #a626a6;
+}
+
+body {
+    padding-top: 15vh; /*view height -> 5% da tela */
+    background-image: url('../img/back7.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+}
+
+/* form */
+#main-registro {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+#main-registro h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /* adaptada ao elemento root */
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.full-box {
+    flex: 1 1 100%;
+    position: relative;
+}
+
+.half-box {
+    flex:  1 1 45%;
+    position: relative;
+}
+
+.spacing {
+margin-right: 2.5%;
+}
+
+label {
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+}
+
+input:focus {
+    border-color: #a626a6;
+}
+
+input[type="submit"] {
+    background-color: #a626a6;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#agreement {
+    margin-right: 5px;
+}
+
+#agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+}
+
+/* validações */
+.error-validation {
+    color: #FF1A1A;
+    position: absolute;
+    top: 57px;
+    font-size: .8rem;
+}
+
+.template {
+    display: none;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    padding-left: 125px;
+    padding-bottom: 10px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+div#msg-sucesso{
+	width: 400px;
+	margin: 10px auto;
+	padding: 10px;
+    color: white;
+	background-color: rgba(50,205,50,.3);
+	border: 1px solid rgb(34,139,34);
+}
+
+div.msg-erro{
+	width: 400px;
+	margin: 10px auto;
+	padding: 10px;
+    color: white;
+	background-color: rgba(250,128,114,.3);
+	border: 1px solid rgb(165,42,42);
+}

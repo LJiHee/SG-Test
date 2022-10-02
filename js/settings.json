@@ -1,0 +1,5 @@
+{
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Dobri Next -A01- Dark",
+    "php.validate.executablePath": true
+}
